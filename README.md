@@ -25,8 +25,8 @@ base64 may produce + sign that is not good to pass via URL, so need to URL encod
 
 ```c++
 const char* test = "This is the string to be encoded and passed to the JS code.";
-cout << aes_base64_encrypt(test, "16_characterskey");
-// normally we get "Jo1n0VtY4nAe2QxzbWRp06ouU7AUq8n6vcyIqxVSfuLm75XOw+O7cJIzWHYBQtQBIP9Jcdu5USLCV8ondfkyjQ==" there
+cout << encodeURL(aes_base64_encrypt(test, "16_characterskey").c_str());
+// normally we get "Jo1n0VtY4nAe2QxzbWRp06ouU7AUq8n6vcyIqxVSfuLm75XOw%2BO7cJIzWHYBQtQBIP9Jcdu5USLCV8ondfkyjQ%3D%3D" there
 ```
 On the js side:
 ```js
