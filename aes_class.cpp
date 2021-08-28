@@ -2,6 +2,7 @@
 #include "aes.h"
 #include <vector>
 #include <string>
+#include <string.h>
 #include "aes_class.h"
 
 using namespace std;
