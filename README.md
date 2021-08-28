@@ -1,3 +1,5 @@
+![CMake](https://github.com/AndrewShpagin/aes_string_pass/actions/workflows/cmake.yml/badge.svg)
+
 This is the super minimal and library-independent solution of the task:
 
 - We have string, we are writing c++ code. 
